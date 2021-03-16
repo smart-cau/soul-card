@@ -18,7 +18,7 @@ export default function Home() {
   }
 
   return (
-    <Layout>
+    // <Layout>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
@@ -44,6 +44,6 @@ export default function Home() {
 
 
       </div>
-    </Layout>
+    // </Layout>
   )
 }
