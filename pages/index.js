@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import Layout from "../components/Layout";
 import styles from '../styles/Home.module.css'
 
 import {useState} from 'react'
 
 import ReactCardFlip from 'react-card-flip'; //https://github.com/AaronCCWong/react-card-flip
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
   }
 
   return (
-    // <Layout>
+    <Layout>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
@@ -26,7 +27,7 @@ export default function Home() {
 
 
           <main className={styles.main}>
-
+            <FontAwesomeIcon icon={['fab', 'apple']} />
             <ReactCardFlip isFlipped={isFlipped} flipSpeedBackToFront={1} flipSpeedFrontToBack={1}>
               <div>
                 Front of the card
@@ -43,6 +44,6 @@ export default function Home() {
 
 
       </div>
-    // </Layout>
+    </Layout>
   )
 }
