@@ -1,7 +1,10 @@
+import styles from '../styles/Header.module.scss'
 
 const Header = () => {
   return (
-    <h1>The Soul Card</h1>
+    <header className={styles.header}>
+      <h1>The Soul Card</h1>
+    </header>
   )
 }
 

@@ -1,0 +1,147 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 3rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/* ---- Custom CSS ----*/
+
+.question {
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.input_section {
+  margin-bottom: 3rem;
+  .input {
+
+    input {
+      width: 18rem;
+      padding: .5rem;
+      border: 1.5px solid black;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+    input::placeholder {
+      color: #808080;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      border-radius: 5px;
+    }
+    .skip_button {
+      color: gray;
+      border: 1px solid gray;
+      background-color: inherit;
+      padding: .5rem;
+      margin-right: .5rem;
+    }
+    .ask_button {
+      border: 1px solid black;
+      padding: .5rem;
+    }
+  }
+}
+
+.front_card {
+  transition: all 1s;
+}
+.card {
+  position: relative;
+  .soul_text {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #CBC1DB;
+    .front_title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .front_content {
+      font-size: .9rem;
+      font-weight: 400;
+    }
+  }
+}
+.likes {
+  display: flex;
+  justify-content: flex-end;
+}
+.like_button {
+  width: 2rem;
+}
+
+
+
