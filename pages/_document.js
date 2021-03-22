@@ -15,7 +15,7 @@ class MyDocument extends Document {
           <meta name={`description`} content={`The Soul Card Project`}/>
           <meta name={'keywords'} content={`soul card`}/>
 
-          <script src={'/js/gtm.js'}></script>
+          <script src={`/js/gtm.js`}></script>
 
         </Head>
         <body>
