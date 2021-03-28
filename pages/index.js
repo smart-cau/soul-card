@@ -122,17 +122,25 @@ export default function Home() {
                           src={`/images/soul-card-back.png`}
                           width={305}
                           height={524}
-
                         />
                       </div>
                       <div className={styles.card} onClick={handleFlip}>
-                        <p>Back of the card</p>
+                        <div>
+                          <div className={styles.soul_text}>
+                            <p className={styles.front_title}>
+                              Reconsider.
+                            </p>
+                            <p className={styles.front_content}>
+                              Look before you leap. <br/>
+                              Reconsider that why you must make an urgent decision. <br/>
+                              A hasty decision can cause problems. <br/>
+                            </p>
+                          </div>
+                        </div>
                         <Image
                           src={`/images/soul-card-back.png`}
                           width={305}
                           height={524}
-
-
                         />
                       </div>
                     </ReactCardFlip>

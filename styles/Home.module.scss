@@ -138,9 +138,12 @@
 .likes {
   display: flex;
   justify-content: flex-end;
+  //width: 6rem;
 }
 .like_button {
-  width: 2rem;
+  font-size: 2rem;
+  display: flex;
+  width: 3rem;
 }
 
 
