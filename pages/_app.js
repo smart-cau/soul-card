@@ -1,22 +1,22 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'; // bootstrap css
 import {useEffect} from 'react';
+import TagManager from 'react-gtm-module'
+
 import {analytics} from "../utils/Firebase";
-import {GTMPageView} from  '../utils/gtm.ts'
-import Router from 'next/router';
+
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
+      // Firebase Analytics
       analytics();
-      // Initiate GTM
-      useEffect(() => {
-        const handleRouteChange = (url) => GTMPageView(url);
-        Router.events.on('routeChangeComplete', handleRouteChange);
-        return () => {
-          Router.events.off('routeChangeComplete', handleRouteChange);
-        };
-      }, []);
+
+      // GTM
+      const tagManagerArgs = {
+        gtmId: 'GTM-WF3BWH2'
+      }
+      TagManager.initialize(tagManagerArgs)
     }
   }, [])
 

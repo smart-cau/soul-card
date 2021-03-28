@@ -14,16 +14,10 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
           <meta name={`description`} content={`The Soul Card Project`}/>
           <meta name={'keywords'} content={`soul card`}/>
-
-
-
         </Head>
         <body>
           <Main />
           <NextScript />
-
-
-
         </body>
       </Html>
     )
